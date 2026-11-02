@@ -1,0 +1,90 @@
+Solver command line: ['/home/sinan/miniconda3/envs/nutrient_market/bin/python']
+
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2548088
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Read LP format model from file /tmp/tmph6bhv90h.pyomo.lp
+Reading time = 0.53 seconds
+x1: 108985 rows, 89663 columns, 508224 nonzeros
+Set parameter Threads to value 8
+Set parameter MIPGap to value 1e-05
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.2 LTS (fossa-ditto X84)")
+
+CPU model: Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 80 logical processors, using up to 8 threads
+
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Optimize a model with 108985 rows, 89663 columns and 508224 nonzeros
+Model fingerprint: 0x6f95185b
+Model has 44643 quadratic constraints
+Variable types: 45461 continuous, 44202 integer (44202 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 3e+03]
+  QMatrix range    [2e-05, 1e+00]
+  QLMatrix range   [2e-02, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+04]
+  RHS range        [1e+00, 8e+03]
+  QRHS range       [7e+00, 1e+10]
+Warning: Model contains large rhs on quadratic constraints
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 69572 rows and 60658 columns
+Presolve time: 1.82s
+Presolved: 88658 rows, 70001 columns, 246182 nonzeros
+Presolved model has 25246 SOS constraint(s)
+Variable types: 41820 continuous, 28181 integer (28181 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    9.0499440e+02   7.073397e+04   5.032993e+09     18s
+Concurrent spin time: 0.01s
+
+Solved with dual simplex
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    9905    1.7293672e+02   0.000000e+00   0.000000e+00     18s
+
+Root relaxation: objective 1.729367e+02, 9905 iterations, 0.33 seconds (0.23 work units)
+Total elapsed time = 18.41s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  172.93672    0 1525          -  172.93672      -     -   24s
+     0     0  202.83015    0 1501          -  202.83015      -     -   24s
+H    0     0                     719.8814680  202.83015  71.8%     -   24s
+H    0     0                     576.9335020  202.83015  64.8%     -   25s
+H    0     0                     325.1892033  202.83015  37.6%     -   25s
+     0     0  212.00195    0  988  325.18920  212.00195  34.8%     -   25s
+H    0     0                     324.9350562  212.00195  34.8%     -   25s
+     0     0  237.99024    0  128  324.93506  237.99024  26.8%     -   26s
+     0     0  237.99024    0  132  324.93506  237.99024  26.8%     -   26s
+
+Cutting planes:
+  Gomory: 3
+  Implied bound: 149
+  Clique: 62
+  MIR: 14
+  Flow cover: 10
+  Zero half: 38
+  Network: 1
+  RLT: 30
+  Relax-and-lift: 7
+  BQP: 3
+
+Explored 1 nodes (15453 simplex iterations) in 26.38 seconds (16.80 work units)
+Thread count was 8 (of 80 available processors)
+
+Solution count 6: 324.935 324.935 325.189 ... 719.881
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective 3.249350561596e+02, best bound 3.249350561596e+02, gap 0.0000%
+

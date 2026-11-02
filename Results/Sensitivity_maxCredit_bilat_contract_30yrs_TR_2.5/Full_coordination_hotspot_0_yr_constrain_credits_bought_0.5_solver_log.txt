@@ -1,0 +1,79 @@
+Solver command line: ['/home/sinan/miniconda3/envs/nutrient_market/bin/python']
+
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2548088
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Read LP format model from file /tmp/tmpw2_z511j.pyomo.lp
+Reading time = 0.49 seconds
+x1: 108985 rows, 89663 columns, 508224 nonzeros
+Set parameter Threads to value 8
+Set parameter MIPGap to value 1e-05
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.2 LTS (fossa-ditto X84)")
+
+CPU model: Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 80 logical processors, using up to 8 threads
+
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Optimize a model with 108985 rows, 89663 columns and 508224 nonzeros
+Model fingerprint: 0xd4c0c900
+Model has 44643 quadratic constraints
+Variable types: 45461 continuous, 44202 integer (44202 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 3e+03]
+  QMatrix range    [2e-05, 1e+00]
+  QLMatrix range   [2e-02, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+04]
+  RHS range        [1e+00, 8e+03]
+  QRHS range       [7e+00, 1e+10]
+Warning: Model contains large rhs on quadratic constraints
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 67791 rows and 60655 columns
+Presolve time: 1.60s
+Presolved: 88958 rows, 69534 columns, 246399 nonzeros
+Presolved model has 25136 SOS constraint(s)
+Variable types: 41441 continuous, 28093 integer (28030 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.5266659e+00   2.083810e+05   0.000000e+00     14s
+    9142    1.7314197e+02   0.000000e+00   0.000000e+00     14s
+
+Root relaxation: objective 1.731420e+02, 9142 iterations, 0.17 seconds (0.18 work units)
+Total elapsed time = 13.86s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  173.14197    0 1627          -  173.14197      -     -   20s
+     0     0  202.37872    0 1535          -  202.37872      -     -   21s
+H    0     0                     576.1283582  202.37872  64.9%     -   21s
+H    0     0                     324.3555877  202.37872  37.6%     -   21s
+     0     0  211.48747    0 1150  324.35559  211.48747  34.8%     -   21s
+     0     0  236.86855    0   25  324.35559  236.86855  27.0%     -   22s
+     0     0  236.86855    0   28  324.35559  236.86855  27.0%     -   22s
+H    0     0                     324.1299123  236.86855  26.9%     -   22s
+     0     0  238.85266    0   28  324.12991  238.85266  26.3%     -   22s
+     0     0  241.93199    0   24  324.12991  241.93199  25.4%     -   23s
+     0     0  243.40538    0   22  324.12991  243.40538  24.9%     -   23s
+     0     0  243.40538    0   19  324.12991  243.40538  24.9%     -   23s
+
+Cutting planes:
+  Gomory: 6
+  Implied bound: 157
+  MIR: 19
+  Flow cover: 10
+  RLT: 5
+  Relax-and-lift: 1
+
+Explored 1 nodes (15722 simplex iterations) in 23.18 seconds (17.86 work units)
+Thread count was 8 (of 80 available processors)
+
+Solution count 6: 324.13 324.13 324.356 ... 576.128
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective 3.241299123476e+02, best bound 3.241299123476e+02, gap 0.0000%
+

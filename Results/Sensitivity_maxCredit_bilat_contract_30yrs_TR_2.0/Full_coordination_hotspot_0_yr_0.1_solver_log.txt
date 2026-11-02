@@ -1,0 +1,102 @@
+Solver command line: ['/home/sinan/miniconda3/envs/nutrient_market/bin/python']
+
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2548088
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Read LP format model from file /tmp/tmpg72m59ex.pyomo.lp
+Reading time = 0.51 seconds
+x1: 108985 rows, 89756 columns, 508317 nonzeros
+Set parameter Threads to value 8
+Set parameter MIPGap to value 1e-05
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.2 LTS (fossa-ditto X84)")
+
+CPU model: Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 80 logical processors, using up to 8 threads
+
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Optimize a model with 108985 rows, 89756 columns and 508317 nonzeros
+Model fingerprint: 0xebbc97e1
+Model has 44643 quadratic constraints
+Variable types: 45554 continuous, 44202 integer (44202 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 3e+03]
+  QMatrix range    [2e-05, 1e+00]
+  QLMatrix range   [2e-02, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+04]
+  RHS range        [1e+00, 8e+03]
+  QRHS range       [7e+00, 1e+10]
+Warning: Model contains large rhs on quadratic constraints
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 71335 rows and 61938 columns
+Presolve time: 1.03s
+Presolved: 88142 rows, 70598 columns, 248294 nonzeros
+Presolved model has 26556 SOS constraint(s)
+Variable types: 43594 continuous, 27004 integer (27004 binary)
+Found heuristic solution: objective 931.8813362
+
+Deterministic concurrent LP optimizer: primal and dual simplex (primal and dual model)
+Showing primal log only...
+
+Root relaxation presolved: 55326 rows, 24138 columns, 171752 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.2940101e+03   4.181116e+05   7.020052e+09     15s
+Concurrent spin time: 0.01s
+
+Solved with dual simplex
+
+Root relaxation: objective 1.908239e+02, 27697 iterations, 1.16 seconds (0.77 work units)
+Total elapsed time = 16.28s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  190.82393    0 2644  931.88134  190.82393  79.5%     -   23s
+     0     0  195.39517    0 2545  931.88134  195.39517  79.0%     -   23s
+H    0     0                     324.9923697  195.39517  39.9%     -   23s
+H    0     0                     324.9911222  195.39517  39.9%     -   23s
+     0     0  232.72219    0 2635  324.99112  232.72219  28.4%     -   29s
+     0     0  232.72219    0 2296  324.99112  232.72219  28.4%     -   36s
+     0     0  232.72219    0 2296  324.99112  232.72219  28.4%     -   49s
+     0     0  232.72219    0 2293  324.99112  232.72219  28.4%     -   51s
+     0     0  233.44973    0 2189  324.99112  233.44973  28.2%     -   52s
+     0     0  233.70077    0 1930  324.99112  233.70077  28.1%     -   52s
+     0     0  233.70357    0 1521  324.99112  233.70357  28.1%     -   52s
+     0     0  233.70357    0 1517  324.99112  233.70357  28.1%     -   52s
+     0     0  233.80861    0 1663  324.99112  233.80861  28.1%     -   53s
+     0     0  234.37904    0 1649  324.99112  234.37904  27.9%     -   53s
+     0     0  234.39536    0 1278  324.99112  234.39536  27.9%     -   53s
+     0     0  235.04919    0 1637  324.99112  235.04919  27.7%     -   53s
+H    0     0                     324.8995009  235.04919  27.7%     -   60s
+
+Cutting planes:
+  Learned: 5
+  Gomory: 4
+  Cover: 55
+  Implied bound: 691
+  Clique: 77
+  MIR: 302
+  StrongCG: 1
+  Flow cover: 305
+  GUB cover: 12
+  Zero half: 16
+  Network: 14
+  RLT: 462
+  Relax-and-lift: 161
+  BQP: 236
+  PSD: 36
+
+Explored 1 nodes (64414 simplex iterations) in 61.11 seconds (39.74 work units)
+Thread count was 8 (of 80 available processors)
+
+Solution count 4: 324.9 324.991 324.992 931.881 
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective 3.248995009133e+02, best bound 3.248995009133e+02, gap 0.0000%
+

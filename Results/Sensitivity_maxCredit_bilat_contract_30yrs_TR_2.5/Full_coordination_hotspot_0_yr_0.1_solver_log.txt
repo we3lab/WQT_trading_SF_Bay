@@ -1,0 +1,110 @@
+Solver command line: ['/home/sinan/miniconda3/envs/nutrient_market/bin/python']
+
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2548088
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Read LP format model from file /tmp/tmph4o1upn2.pyomo.lp
+Reading time = 0.50 seconds
+x1: 108985 rows, 89756 columns, 508317 nonzeros
+Set parameter Threads to value 8
+Set parameter MIPGap to value 1e-05
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.2 LTS (fossa-ditto X84)")
+
+CPU model: Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 80 logical processors, using up to 8 threads
+
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Optimize a model with 108985 rows, 89756 columns and 508317 nonzeros
+Model fingerprint: 0x1fa6de8c
+Model has 44643 quadratic constraints
+Variable types: 45554 continuous, 44202 integer (44202 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 3e+03]
+  QMatrix range    [2e-05, 1e+00]
+  QLMatrix range   [2e-02, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+04]
+  RHS range        [1e+00, 8e+03]
+  QRHS range       [7e+00, 1e+10]
+Warning: Model contains large rhs on quadratic constraints
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 71357 rows and 61960 columns
+Presolve time: 1.06s
+Presolved: 88015 rows, 70786 columns, 247967 nonzeros
+Presolved model has 26766 SOS constraint(s)
+Variable types: 43677 continuous, 27109 integer (27109 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex (primal and dual model)
+Showing primal log only...
+
+Root relaxation presolved: 55942 rows, 24260 columns, 173441 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.2911229e+03   3.716045e+05   5.135370e+09     17s
+Concurrent spin time: 0.06s
+
+Solved with dual simplex
+
+Root relaxation: objective 1.277969e+02, 23760 iterations, 0.98 seconds (0.59 work units)
+Total elapsed time = 17.72s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  127.79692    0 1555          -  127.79692      -     -   37s
+     0     0  197.19181    0 2636          -  197.19181      -     -   40s
+H    0     0                     563.9498437  197.19181  65.0%     -   40s
+H    0     0                     562.9835645  197.19181  65.0%     -   41s
+     0     0  232.72698    0 2245  562.98356  232.72698  58.7%     -   61s
+     0     0  232.95826    0 2534  562.98356  232.95826  58.6%     -   67s
+     0     0  235.47627    0 2724  562.98356  235.47627  58.2%     -   78s
+H    0     0                     550.4808960  242.89256  55.9%     -   79s
+     0     0  242.89256    0 2666  550.48090  242.89256  55.9%     -   81s
+     0     0  242.89256    0 2660  550.48090  242.89256  55.9%     -   81s
+     0     0  242.89256    0 2664  550.48090  242.89256  55.9%     -   81s
+H    0     0                     542.2814137  245.96243  54.6%     -   83s
+     0     0  245.96243    0 3055  542.28141  245.96243  54.6%     -   89s
+H    0     0                     495.6135453  245.97079  50.4%     -   89s
+     0     0  246.10073    0 2641  495.61355  246.10073  50.3%     -   91s
+     0     0  246.10073    0 2638  495.61355  246.10073  50.3%     -   91s
+     0     0  319.34994    0 2389  495.61355  319.34994  35.6%     -   94s
+H    0     0                     326.6542796  319.35232  2.24%     -   94s
+     0     0  321.54199    0 1917  326.65428  321.54199  1.57%     -   96s
+     0     0  323.57383    0 1863  326.65428  323.57383  0.94%     -   96s
+     0     0  323.70926    0 1857  326.65428  323.70926  0.90%     -   96s
+     0     0  323.72870    0 1862  326.65428  323.72870  0.90%     -   96s
+     0     0  323.72870    0 1861  326.65428  323.72870  0.90%     -   96s
+     0     0  324.18025    0 1715  326.65428  324.18025  0.76%     -   97s
+     0     0  324.18025    0 1581  326.65428  324.18025  0.76%     -  102s
+     0     0  324.18025    0 1439  326.65428  324.18025  0.76%     -  102s
+     0     0  324.18025    0 1437  326.65428  324.18025  0.76%     -  102s
+     0     0  324.18025    0  706  326.65428  324.18025  0.76%     -  102s
+H    0     0                     324.9755547  324.18025  0.24%     -  102s
+H    0     0                     324.9754489  324.18025  0.24%     -  104s
+H    0     0                     324.9753680  324.18025  0.24%     -  104s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 23
+  Implied bound: 231
+  Clique: 617
+  MIR: 44
+  Flow cover: 155
+  Zero half: 4
+  RLT: 17
+  Relax-and-lift: 17
+  BQP: 4
+
+Explored 1 nodes (74234 simplex iterations) in 104.70 seconds (56.88 work units)
+Thread count was 8 (of 80 available processors)
+
+Solution count 9: 324.975 324.975 324.976 ... 563.95
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective 3.249753680276e+02, best bound 3.249753680276e+02, gap 0.0000%
+

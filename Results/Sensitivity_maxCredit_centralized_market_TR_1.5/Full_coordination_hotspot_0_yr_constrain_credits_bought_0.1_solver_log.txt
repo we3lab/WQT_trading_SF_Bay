@@ -1,0 +1,96 @@
+Solver command line: ['/home/sinan/miniconda3/envs/nutrient_market/bin/python']
+
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2548088
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Read LP format model from file /tmp/tmpx5jzrryj.pyomo.lp
+Reading time = 0.47 seconds
+x1: 101434 rows, 86423 columns, 479082 nonzeros
+Set parameter Threads to value 8
+Set parameter MIPGap to value 1e-05
+Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (linux64 - "Ubuntu 20.04.2 LTS (fossa-ditto X84)")
+
+CPU model: Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 40 physical cores, 80 logical processors, using up to 8 threads
+
+Academic license 2548088 - for non-commercial use only - registered to si___@stanford.edu
+Optimize a model with 101434 rows, 86423 columns and 479082 nonzeros
+Model fingerprint: 0x793e9f35
+Model has 44643 quadratic constraints
+Variable types: 45461 continuous, 40962 integer (40962 binary)
+Coefficient statistics:
+  Matrix range     [5e-02, 3e+03]
+  QMatrix range    [2e-05, 1e+00]
+  QLMatrix range   [2e-02, 1e+04]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+04]
+  RHS range        [1e+00, 8e+03]
+  QRHS range       [7e+00, 1e+10]
+Warning: Model contains large rhs on quadratic constraints
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 63174 rows and 58607 columns
+Presolve time: 0.78s
+Presolved: 86946 rows, 68349 columns, 235455 nonzeros
+Presolved model has 24960 SOS constraint(s)
+Variable types: 42121 continuous, 26228 integer (26228 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex (primal and dual model)
+Showing primal log only...
+
+Root relaxation presolved: 34984 rows, 14537 columns, 104059 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    3.7629544e+03   1.711331e+05   5.681887e+09      5s
+Concurrent spin time: 0.01s
+
+Solved with dual simplex
+
+Root relaxation: objective 1.682737e+02, 10191 iterations, 0.55 seconds (0.35 work units)
+Total elapsed time = 5.85s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  168.27370    0 1209          -  168.27370      -     -   14s
+     0     0  201.08250    0 1117          -  201.08250      -     -   14s
+     0     0  201.10270    0 1115          -  201.10270      -     -   15s
+H    0     0                     721.3118195  201.10270  72.1%     -   18s
+H    0     0                     582.7744011  225.09518  61.4%     -   18s
+H    0     0                     582.7724528  225.09518  61.4%     -   18s
+     0     0  231.84293    0  381  582.77245  231.84293  60.2%     -   18s
+H    0     0                     573.3255597  232.55630  59.4%     -   19s
+     0     0  232.55630    0  376  573.32556  232.55630  59.4%     -   19s
+H    0     0                     339.9780743  234.48327  31.0%     -   22s
+     0     0  246.47990    0  104  339.97807  246.47990  27.5%     -   22s
+     0     0  246.47990    0  447  339.97807  246.47990  27.5%     -   23s
+     0     0  246.47990    0  144  339.97807  246.47990  27.5%     -   23s
+H    0     0                     318.0788861  246.47990  22.5%     -   23s
+     0     0  246.57132    0   35  318.07889  246.57132  22.5%     -   24s
+     0     0  246.57132    0  102  318.07889  246.57132  22.5%     -   25s
+     0     0  246.57132    0  104  318.07889  246.57132  22.5%     -   25s
+H    0     0                     318.0760498  246.57132  22.5%     -   25s
+
+Cutting planes:
+  Gomory: 15
+  Cover: 9
+  Implied bound: 211
+  Clique: 3
+  MIR: 26
+  Flow cover: 77
+  RLT: 93
+  Relax-and-lift: 46
+  BQP: 1
+
+Explored 1 nodes (25595 simplex iterations) in 25.35 seconds (14.77 work units)
+Thread count was 8 (of 80 available processors)
+
+Solution count 7: 318.076 318.079 339.978 ... 721.312
+
+Optimal solution found (tolerance 1.00e-05)
+Best objective 3.180760497665e+02, best bound 3.180760497665e+02, gap 0.0000%
+
